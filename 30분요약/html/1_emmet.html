@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>emmet 실습</title>
+
+        link:css
+        <link rel="stylesheet" href="style.css" />
+        link:favicon
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <style>
+            p{
+                pos
+                position: relative;
+                pos:a
+                position: absolute;
+                t
+                top: ;
+                r
+                right: ;
+                b
+                bottom: ;
+                l
+                left: ;
+                d
+                display: block;
+                v
+                visibility: hidden;
+                m
+                margin: ;
+
+                이 3개는 안되넹.
+                matop
+                mbot
+                mle
+
+                mri
+                margin-right: inherit;
+                c
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        h1
+        <h1></h1>
+
+        h1+h1+p
+        <h1></h1>
+        <h1></h1>
+        <p></p>
+
+        h1*3
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+
+        h1{hello world}
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+        <h1>hello world</h1>
+
+        h1#hojun
+        <h1 id="hojun"></h1>
+
+        h1.hoju
+        <h1 class="hoju"></h1>
+
+        (div>table>(tr>(td*2))*3)+(footer>p)
+        <div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <p></p>
+        </footer>
+
+        div#one.c1.c2.c3
+        <div id="one" class="c1 c2 c3"></div>
+
+        ul>li.item$*5
+        <ul>
+            <li class="item1"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+        </ul>
+
+        ul>
+        <ul></ul>
+
+        a{Click}
+        <a href="">Click</a>
+
+        lorem /의미없는 문장에 사용시/ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores repellat nemo labore nisi harum, in inventore doloribus illum quia debitis ea quisquam
+        veritatis ullam iusto sunt veniam odit alias! img:z
+        <!-- lorem*5는 5개의 문장 -->
+        lorem*5 // Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque delectus nihil quidem quisquam repellat et sit earum, corrupti nemo nostrum vitae eveniet, quaerat consequatur
+        debitis beatae, rem porro ratione modi! Odio voluptas atque deserunt tempore at dolor consectetur. Sunt perspiciatis in a modi delectus nemo nam corporis quidem veritatis, iusto rerum nihil
+        corrupti facilis voluptatum molestias blanditiis repudiandae, dicta fugit! Aliquam vel asperiores numquam laborum error sequi consectetur beatae iusto totam, praesentium omnis adipisci.
+        Temporibus dolorem libero consectetur minima excepturi quaerat hic placeat, porro autem cumque eum minus nihil asperiores? Quia optio voluptatum provident beatae libero labore minima,
+        temporibus laborum non! Accusantium, corrupti aperiam! Minima corporis voluptatem nostrum nulla cum! Ipsum quisquam nostrum libero! Molestiae incidunt excepturi et quam ab! Perspiciatis aut at
+        unde, quo iure officiis ducimus odio culpa vel quaerat voluptatem, dolorem earum! Voluptatibus reprehenderit inventore quam cumque qui placeat sed ipsam a dolorum, suscipit nesciunt ratione
+        fuga?
+        <!-- lorem5는 5개의 단어 -->
+        lorem5 [a='value1' b="value2" c=1] a[href='www.naver.com'] Lorem ipsum dolor sit amet consectetur.
+        <div a="value1" b="value2" c="1"></div>
+        <a href="www.naver.com"></a>
+
+        <!--
+            Ctrl + \ : 토글 보이기
+            Ctrl + O : 파일 열기
+            Ctrl + P : 프로젝트 검색
+            Ctrl + F : 열려 있는 파일 내에서 검색
+            Ctrl + Shift + F : 열려 있는 전체 프로젝트 내에서 검색
+            Ctrl + , : Settings
+            Ctrl + N : 새로운 파일
+            Ctrl + S : 파일 저장
+            Ctrl + Shift + S  :다른 이름으로 저장
+            Shift + del : 라인 지우기
+            Ctrl + 클릭 : 여러줄 입력 
+        -->
+        <!-- 참고자료 : https://docs.emmet.io/cheat-sheet/ -->
+    </body>
+</html>
