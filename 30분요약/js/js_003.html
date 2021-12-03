@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //연산
+
+            var x, y, z;
+            x = 3;
+            y = 5;
+            z = 7;
+
+            //사칙연산
+            document.write(x + y);
+            document.write("<br>");
+            document.write(x - y);
+            document.write("<br>");
+            document.write(x * y);
+            document.write("<br>");
+            document.write(x ** y);
+            document.write("<br>");
+            document.write(y / x);
+            document.write("<br>");
+            document.write(y % x);
+            document.write("<br>");
+
+            //증감연산
+            x++;
+            y--;
+            //대입연산
+            x *= 3; // x = x*3;
+            document.write("x는 ", x, "<br> y는 ", y);
+            document.write("<br>");
+
+            x = 3;
+            z = "3";
+            // 비교연산
+            document.write("1:", x > z);
+            document.write("<br>");
+            document.write("2:", x <= y);
+            document.write("<br>");
+            document.write("3:", x < z);
+            document.write("<br>");
+            document.write("4:", x == y);
+            document.write("<br>");
+            document.write("5:", y != x);
+            document.write("<br>");
+            document.write("6:", y === x);
+            document.write("<br>");
+
+            x = true;
+            y = false;
+            document.write("1:", x && y); // and : *
+            document.write("<br>");
+            document.write("2:", x || y); // or : +
+            document.write("<br>");
+            document.write("3:", !y); // or : +
+            document.write("<br>");
+        </script>
+    </body>
+</html>

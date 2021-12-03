@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var txt = "홍길동은 의적인가 도적인가";
+            var txt1 = "power overwhelming";
+            var num = 10;
+
+            document.write(txt.length); //문자의 길이
+            document.write("<br>");
+            document.write(txt.indexOf("의적")); //해당 문자위치
+            document.write("<br>");
+            document.write(txt.slice(0, 6)); //0~6까지의 index번호.value출력
+            document.write("<br>");
+            document.write(txt.replace("홍길동", "고길동")); //A문자를 B문자로.
+            document.write("<br>");
+            document.write(txt1.toUpperCase()); //대문자화
+            document.write("<br>");
+            //
+            document.write(num.toFixed(5)); //소수점까지 출력
+            document.write("<br>");
+            document.write(num.toString()); //숫자를 문자열화
+            document.write("<br>");
+            document.write(Math.PI); //파이 3.14
+            document.write("<br>");
+            document.write(Math.max(10, 20, 30)); //숫자중 가장 큰 수
+            document.write("<br>");
+            document.write(Math.random()); //랜덤 수
+            document.write("<br>");
+            document.write(parseInt(Math.random() * 10)); //랜덤수가 0~1사이의 소수점으로 나오므로 *10을 한뒤 정수화 하면 0~9사이 랜덤수
+            document.write("<br>");
+        </script>
+    </body>
+</html>
