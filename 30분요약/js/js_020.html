@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 class="one">hello world one</h1>
+        <h1 class="two">hello world two</h1>
+        <h1 id="four" class="one two three">hello world three</h1>
+        <h1>hello world four</h1>
+        <h1>hello world five</h1>
+        <h1>hello world six</h1>
+        <button id="two" onclick="f()">눌러!</button>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $("#two").click(function f() {
+                $("h1:first").html("<mark>반갑습니다.!!</mark>").fadeOut(3000).fadeIn(3000);
+            });
+
+            // 메서드 (속성 값 변경, Dom 탐색, css, 이벤트, 효과, etc)
+            /*
+                .text
+                .html
+                .val
+                .hide
+                .show
+                .fadeIn
+                .fadeOut
+            */
+        </script>
+    </body>
+</html>

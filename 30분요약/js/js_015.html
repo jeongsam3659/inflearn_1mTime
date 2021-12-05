@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <div class="one">ones</div>
+        <div class="one two" id="three">one two id three</div>
+        <div class="one two four">one two four</div>
+
+        <script type="text/javascript">
+            // // 1. 단일 element를 반환하는 함수
+            // document.getElementById('id');
+            // document.querySelector('.class / #id');
+            //
+            // // 2. 복수의 element를 반환하는 함수
+            // document.getElementsByName('name');
+            let k = document.getElementsByClassName("one");
+            // document.querySelectorAll('query')
+
+            console.log(k);
+            document.write(k["0"]["innerHTML"]);
+            document.write("<br>");
+            document.write(k["2"]["className"]);
+            // 두번째의 className element 값
+        </script>
+    </body>
+</html>

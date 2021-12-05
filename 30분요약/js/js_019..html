@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 class="one">hello world one</h1>
+        <h1 class="two">hello world two</h1>
+        <h1 id="four" class="one two three">hello world three</h1>
+        <h1>hello world four</h1>
+        <h1>hello world five</h1>
+        <h1>hello world six</h1>
+        <button id="two" onclick="f()">눌러!</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script>
+            $("#two").click(function f() {
+                //$("h1:last").html("반갑습니다.");
+                // first는 첫번째
+                // last는 마지막
+                $("h1.one.three").html("one 과 three만 적용");
+                //$("h1.one").html();
+                //3개 다 바뀐다.
+                //$("h1.one#four");.html();
+            });
+
+            //요약
+            // $(#id) id만 선택
+            // $(.class) class만 선택
+            // $(h1.class) h1에 class의 조합이 된 엘리먼트를 선택
+            // $(h1.classone.classtwo#idone#idtwo)
+
+            // 필터( 기본필터, 속성 필터, 차일드필터, 컨테츠 필터)
+            // :even
+            // :odd     홀수
+            // :first
+            // :last
+            // :nth-child(2)
+            // :nth-child(2n)
+            // etc
+        </script>
+    </body>
+</html>
